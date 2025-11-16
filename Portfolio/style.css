@@ -15,16 +15,21 @@ body {
 
 /* ==== SECTION LAYOUT ==== */
 section {
-  padding: 60px 10%; /* Reduced vertical space from 80px to 60px */
+  padding: 60px 10%;
+  /* Reduced vertical space from 80px to 60px */
   text-align: center;
 }
 
 #home {
   height: 100vh;
-  padding-top: 100px; /* Keeps proper top space below navbar */
+  padding-top: 100px;
+  /* Keeps proper top space below navbar */
 }
 
-#about, #skills, #projects, #contact {
+#about,
+#skills,
+#projects,
+#contact {
   padding: 60px 10%;
 }
 
@@ -126,11 +131,30 @@ section {
   border-radius: 25px;
 }
 
-.html { width: 95%; background: #e44d26; }
-.css { width: 90%; background: #1572b6; }
-.js { width: 85%; background: #f7df1e; }
-.react { width: 80%; background: #61dbfb; }
-.git { width: 75%; background: #f05032; }
+.html {
+  width: 95%;
+  background: #e44d26;
+}
+
+.css {
+  width: 90%;
+  background: #1572b6;
+}
+
+.js {
+  width: 85%;
+  background: #f7df1e;
+}
+
+.react {
+  width: 80%;
+  background: #61dbfb;
+}
+
+.git {
+  width: 75%;
+  background: #f05032;
+}
 
 /* ==== PROJECTS ==== */
 .projects-container {
