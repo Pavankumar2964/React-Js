@@ -4,11 +4,19 @@ import { MessageAccessConsumer } from "./ContextComponentOne";
 
 export default class ChildComponentOne extends Component{
     render(){
+        // The declaration of StudentList must be inside the consumer function
+        // where 'value' is defined and accessible.
+        
         return(
             <div>
         <MessageAccessConsumer>
   {(value) => {
+    // 'value' is defined here by the Context API.
     console.log(value)
+    
+    // Move the definition of StudentList here
+    const StudentList=Object.entries(value.student) 
+    
     return (
       <div>
         <h2>{value.message}</h2>
@@ -19,12 +27,15 @@ export default class ChildComponentOne extends Component{
         </ul>
 
         <h3>Student Details</h3>
-        <ol>
-          <li>Name: {value.person.student.Name}</li>
-          <li>ID: {value.person.student.Id}</li>
-          <li>Email: {value.person.student.Email}</li>
-          <li>Age: {value.person.student.Age}</li>
-        </ol>
+        
+        <ul>
+                        {/* Now StudentList is correctly defined and can be mapped */}
+                        {StudentList.map(([Key,val])=>(
+                            <li key={Key}>
+                                {Key}:{val}
+                            </li>
+                        ))}
+                    </ul>
       </div>
     );
   }}
