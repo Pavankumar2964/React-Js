@@ -6,24 +6,30 @@ export default class ChildComponentOne extends Component{
     render(){
         return(
             <div>
-               <MessageAccessConsumer>
+        <MessageAccessConsumer>
   {(value) => {
-    console.log(value);
+    console.log(value)
     return (
       <div>
         <h2>{value.message}</h2>
 
-        <h3>Person Name: {value.person.name}</h3>
+        <h3>Person Details</h3>
+        <ul>
+          <li>Name: {value.person.name}</li>
+        </ul>
 
-        <h3>Student Details:</h3>
-        <p>Name: {value.person.student.Name}</p>
-        <p>ID: {value.person.student.Id}</p>
-        <p>Email: {value.person.student.Email}</p>
-        <p>Age: {value.person.student.Age}</p>
+        <h3>Student Details</h3>
+        <ol>
+          <li>Name: {value.person.student.Name}</li>
+          <li>ID: {value.person.student.Id}</li>
+          <li>Email: {value.person.student.Email}</li>
+          <li>Age: {value.person.student.Age}</li>
+        </ol>
       </div>
     );
   }}
 </MessageAccessConsumer>
+
 
             </div>
         );
