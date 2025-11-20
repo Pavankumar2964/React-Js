@@ -19,7 +19,8 @@ export default class MainComponentOne extends Component{
                     Id:"22PK29",
                     Email:"Pavankumar29ctr@gamil.com",
                     Age:"21",
-                }
+                },
+                
             
         };
     }
