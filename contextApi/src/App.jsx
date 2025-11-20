@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import MainComponentOne from './Component1/MainComponentOne'
+import MainComponentTwo from './Component2/MainComponentTwo'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -10,7 +11,8 @@ function App() {
   return (
     <>
       <div>
-        <MainComponentOne/>
+       
+        <MainComponentTwo/>
       </div>
    
     </>
