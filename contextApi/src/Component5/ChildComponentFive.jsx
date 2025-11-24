@@ -1,6 +1,28 @@
-import {Component}from "react"
+import { Component } from "react";
+import { MessageAccessConsumer } from "./ContextCompFive";
 
 
 export default class ChildComponentFive extends Component{
-
+    render(){
+        return(
+            <div>
+                <MessageAccessConsumer>
+                    {(value)=>{
+                        console.log(value)
+                        return(
+                            <div>
+                                {value.Student.map((result)=>{
+                                    return(
+                                        <ul>{Object.values(result).map((val)=>{
+                                            return<li>{val}</li>
+                                        })}</ul>
+                                    )
+                                })}
+                            </div>
+                        )
+                    }}
+                </MessageAccessConsumer>
+            </div>
+        )
+    }
 }
