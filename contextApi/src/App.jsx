@@ -6,6 +6,7 @@ import MainComponentOne from './Component1/MainComponentOne'
 import MainComponentTwo from './Component2/MainComponentTwo'
 import MainCompoThree from './Component3/MainCompThree'
 import MainComponentFour from './Component4/MainComponentFour'
+import MainComponentFive from './Component5/MainComponentFive'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,7 +17,8 @@ function App() {
        
         {/* <MainComponentTwo/> */}
         {/* <MainCompoThree/> */}
-        <MainComponentFour/>
+        {/* <MainComponentFour/> */}
+        <MainComponentFive/>
       </div>
    
     </>
