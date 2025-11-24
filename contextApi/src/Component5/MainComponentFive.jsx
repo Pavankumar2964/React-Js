@@ -1,5 +1,6 @@
 import { Component } from "react";
 import { MessageAccessProvider } from "./ContextCompFive";
+import ChildComponentFive from "./ChildComponentFive";
 
 
 export default class MainComponentFive extends Component{
@@ -15,7 +16,7 @@ export default class MainComponentFive extends Component{
         return(
             <div>
                 <MessageAccessProvider value={this.state}>
-                    
+                 <ChildComponentFive/>   
                 </MessageAccessProvider>
             </div>
         )
