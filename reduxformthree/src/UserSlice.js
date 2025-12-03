@@ -1,6 +1,6 @@
-import {createSlice } from "@reduxjs/toolkit";
-const initialUsers ={
-    usersArry: [
+import { createSlice } from "@reduxjs/toolkit";
+const initialUsers = {
+  usersArry: [
     {
       id: 1,
       name: "Arun Kumar",
@@ -43,10 +43,10 @@ const initialUsers ={
     },
   ],
 };
-export const UserSlice =createSlice({
-    name:"users",
-    initialState:initialUsers,
-   
+export const UserSlice = createSlice({
+  name: "users",
+  initialState: initialUsers,
+
 });
 
 export default UserSlice.reducer;
