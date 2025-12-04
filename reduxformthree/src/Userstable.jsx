@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Userstable({ users }) {
+export default function Userstable({ users,deleteUser }) {
     return (
         <div style={{ padding: "20px" }}>
             <h2>Users List</h2>
@@ -36,7 +36,7 @@ export default function Userstable({ users }) {
 
                             <td style={Styles.td}>{user.city}</td>
                             <td style={Styles.td}>Edit User</td>
-                            <td style={Styles.td}>DeleteUser</td>
+                            <td style={Styles.td}><button onClick={()=>{deleteUser(user);}}>DeleteUser</button></td>
                         </tr>
                     ))}
                 </tbody>
