@@ -1,16 +1,16 @@
-import React,{Component} from "react";
+import React, { Component } from "react";
 
-export default class UsersForm extends Component{
-    state={
-        user:{
-            name:"",
-            email:"",
-            age:"",
-            role:"",
-            city:"",
-        },
-    };
-      handleChange = (e) => {
+export default class UsersForm extends Component {
+  state = {
+    user: {
+      name: "",
+      email: "",
+      age: "",
+      role: "",
+      city: "",
+    },
+  };
+  handleChange = (e) => {
     const newUser = { ...this.state.user };
     newUser[e.target.name] = e.target.value;
     this.setState({ user: newUser });
