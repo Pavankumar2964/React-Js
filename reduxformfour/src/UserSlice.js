@@ -3,8 +3,8 @@ import { createSlice } from "@reduxjs/toolkit";
 // import { act } from "react"; // Not needed
 
 const initialUsers = {
-    usersArry: [
-       {
+  usersArry: [
+    {
       id: 1,
       name: "Arun Kumar",
       email: "arun.kumar@example.com",
@@ -44,25 +44,25 @@ const initialUsers = {
       age: 34,
       city: "Mumbai",
     },
-    ],
+  ],
 };
 export const UserSlice = createSlice({
-    name: "users",
-    initialState: initialUsers,
-    reducers: {
-        createUserAction: (state, action) => {
-            // 1. Calculate the new ID
-            action.payload.id = state.usersArry.length + 1;
-            // 2. Add the new user to the array
-            state.usersArry.push(action.payload); // <-- **THIS IS THE FIX**
-        },
-        deleteUserAction: (state, action) => {
-            console.log(action.payload);
-            state.usersArry = state.usersArry.filter((user) => {
-                return user.id !== action.payload.id;
-            });
-        },
-    }
+  name: "users",
+  initialState: initialUsers,
+  reducers: {
+    createUserAction: (state, action) => {
+      // 1. Calculate the new ID
+      action.payload.id = state.usersArry.length + 1;
+      // 2. Add the new user to the array
+      state.usersArry.push(action.payload); // <-- **THIS IS THE FIX**
+    },
+    deleteUserAction: (state, action) => {
+      console.log(action.payload);
+      state.usersArry = state.usersArry.filter((user) => {
+        return user.id !== action.payload.id;
+      });
+    },
+  }
 
 });
 export const { createUserAction, deleteUserAction } = UserSlice.actions;
