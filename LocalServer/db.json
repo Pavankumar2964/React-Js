@@ -1,22 +1,25 @@
 {
   "users": [
     {
-      "id": "c8d6",
-      "fname": "pavan",
-      "lname": "kumar",
-      "email": "pavankumar29ctr@gmail.com"
+      "id": "6c7a",
+      "Name": "S.Pavan Kumar",
+      "Age": "21",
+      "Email": "PavanKumar29ctr@gmail.com",
+      "City": "Chittoor"
     },
     {
-      "id": "423d",
-      "fname": "lokesh",
-      "lname": "waran",
-      "email": "lokeshkumar29ctr@gmail.com"
+      "id": "7652",
+      "Name": "R.Lokeshwaran",
+      "Age": "21",
+      "Email": "lokesh@gamil.com",
+      "City": "chittoor"
     },
     {
-      "id": "236e",
-      "fname": "Ts.uday",
-      "lname": "kiran",
-      "email": "uday@gmail.com"
+      "id": "a3e4",
+      "Name": "Ts.UdayKiran",
+      "Age": "20",
+      "Email": "uday@gmail.com",
+      "City": "Chittoor"
     }
   ]
 }
