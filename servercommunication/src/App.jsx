@@ -3,13 +3,15 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { User } from './Users'
+import { UserOne } from './UserOne'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-   <User/>
+   {/* <User/> */}
+   <UserOne/>
     </>
   )
 }
