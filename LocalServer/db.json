@@ -1,31 +1,7 @@
 {
   "users": [
     {
-      "id": "0346",
-      "fname": "pavan",
-      "lname": "kumar",
-      "email": "pavankumar29ctr@gmail.com"
-    },
-    {
-      "id": "c5d5",
-      "fname": "pavan",
-      "lname": "kumar",
-      "email": "pavankumar29ctr@gmail.com"
-    },
-    {
-      "id": "49a5",
-      "fname": "pavan",
-      "lname": "kumar",
-      "email": "pavankumar29ctr@gmail.com"
-    },
-    {
       "id": "c8d6",
-      "fname": "pavan",
-      "lname": "kumar",
-      "email": "pavankumar29ctr@gmail.com"
-    },
-    {
-      "id": "89f8",
       "fname": "pavan",
       "lname": "kumar",
       "email": "pavankumar29ctr@gmail.com"
@@ -33,14 +9,14 @@
     {
       "id": "423d",
       "fname": "lokesh",
-      "lname": "kumar",
+      "lname": "waran",
       "email": "lokeshkumar29ctr@gmail.com"
     },
     {
-      "id": "7c00",
-      "fname": "lokesh",
-      "lname": "kumar",
-      "email": "lokeshkumar29ctr@gmail.com"
+      "id": "236e",
+      "fname": "Ts.uday",
+      "lname": "kiran",
+      "email": "uday@gmail.com"
     }
   ]
 }
