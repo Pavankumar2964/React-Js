@@ -3,9 +3,9 @@
     {
       "id": "6c7a",
       "Name": "S.Pavan Kumar",
-      "Age": "21",
+      "Age": "22",
       "Email": "PavanKumar29ctr@gmail.com",
-      "City": "Chittoor"
+      "City": "Chittoor,AndhraPradhesh"
     },
     {
       "id": "7652",
@@ -20,6 +20,13 @@
       "Age": "20",
       "Email": "uday@gmail.com",
       "City": "Chittoor"
+    },
+    {
+      "id": "c2d3",
+      "Name": "R.Lokeshwaran",
+      "Age": "21",
+      "Email": "lokesh@gamil.com",
+      "City": "chittoor"
     }
   ]
 }
