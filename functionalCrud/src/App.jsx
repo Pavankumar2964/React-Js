@@ -7,54 +7,54 @@ import { Studentstable } from './Studentstable'
 
 
 function App() {
-  const [student,setStudent] =useState({
-    fName:"",
-    lName:"",
-    email:"",
+  const [student, setStudent] = useState({
+    fName: "",
+    lName: "",
+    email: "",
   });
 
-  const [studentsArray,setStudentsArray] = useState([
-    {fName:"Pavan",lName:"kumar",email:"pavankumar@gmail.com" },
-    {fName:"Pavan",lName:"kumar",email:"pavankumar@gmail.com" },
-    {fName:"Pavan",lName:"kumar",email:"pavankumar@gmail.com" },
+  const [studentsArray, setStudentsArray] = useState([
+    { fName: "Pavan", lName: "kumar", email: "pavankumar@gmail.com" },
+    { fName: "Pavan", lName: "kumar", email: "pavankumar@gmail.com" },
+    { fName: "Pavan", lName: "kumar", email: "pavankumar@gmail.com" },
   ]);
 
-  const [editIndex, setEditIndex]=useState(null);
-  const handleChange=(e)=>{
+  const [editIndex, setEditIndex] = useState(null);
+  const handleChange = (e) => {
     console.log(e);
-    const newStudent={...student};
-    newStudent[e.target.name]=e.target.value;
+    const newStudent = { ...student };
+    newStudent[e.target.name] = e.target.value;
     setStudent(newStudent);
   };
-  const handleSubmit=()=>{
-    const newStudentArray =[...studentsArray];
+  const handleSubmit = () => {
+    const newStudentArray = [...studentsArray];
     newStudentArray.push(student);
     setStudentsArray(newStudentArray);
     clearForm();
   };
 
-  const clearForm=()=>{
+  const clearForm = () => {
     setStudent({
-      fName:"",
-      lName:"",
-      email:"",
+      fName: "",
+      lName: "",
+      email: "",
     });
   };
 
-  const handleDeleteStudent=(i)=>{
-    const newStudents=[...studentsArray];
-    newStudents.splice(i,1);
+  const handleDeleteStudent = (i) => {
+    const newStudents = [...studentsArray];
+    newStudents.splice(i, 1);
     setStudentsArray(newStudents);
   };
 
-  const handleEditStudent=(i)=>{
+  const handleEditStudent = (i) => {
     setStudent(studentsArray[i]);
     setEditIndex(i);
   };
 
-  const handleUpdateStudent=()=>{
-    const newStudents=[...studentsArray];
-    newStudents[editIndex]=student;
+  const handleUpdateStudent = () => {
+    const newStudents = [...studentsArray];
+    newStudents[editIndex] = student;
     setStudentsArray(newStudents);
     clearForm();
     setEditIndex(null);
@@ -62,20 +62,20 @@ function App() {
 
   return (
     <>
-  <Studentform 
-  student={student}
-  handleChange={handleChange}
-  handleSubmit={handleSubmit}
-  handleUpdateStudent={handleUpdateStudent}
-  editIndex={editIndex}
-  />
-  <hr/>
-  <Studentstable
-   studentsArray={studentsArray}
-   handleDeleteStudent={handleDeleteStudent}
-   handleEditStudent={handleEditStudent}
-   />
-  
+      <Studentform
+        student={student}
+        handleChange={handleChange}
+        handleSubmit={handleSubmit}
+        handleUpdateStudent={handleUpdateStudent}
+        editIndex={editIndex}
+      />
+      <hr />
+      <Studentstable
+        studentsArray={studentsArray}
+        handleDeleteStudent={handleDeleteStudent}
+        handleEditStudent={handleEditStudent}
+      />
+
     </>
   )
 }
