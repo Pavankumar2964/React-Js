@@ -23,6 +23,7 @@ export const Studentform = ({
                     <button type="button" onClick={handleUpdateStudent}>{" "}Update Student {" "}</button>
                 )}
             </form>
+            
         </div>
     )
 }
