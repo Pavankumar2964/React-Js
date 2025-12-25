@@ -70,8 +70,8 @@ function App() {
         editIndex={editIndex}
       />
       <hr />
-      <br/>
-      <br/>
+      <br />
+      <br />
       <Studentstable
         studentsArray={studentsArray}
         handleDeleteStudent={handleDeleteStudent}
