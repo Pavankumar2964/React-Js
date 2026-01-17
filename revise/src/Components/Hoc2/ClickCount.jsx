@@ -4,11 +4,11 @@ import HocComp from "./HocComp";
 
 
 
-class ClickCount extends Component{
-    render(){
+class ClickCount extends Component {
+    render() {
         // console.log(this.props)
-        const{count, incrementCount,decrementCount,resetCount}=this.props;
-        return(
+        const { count, incrementCount, decrementCount, resetCount } = this.props;
+        return (
             <div>
                 <button onClick={incrementCount}>Increment</button>
                 <button onClick={decrementCount}>Decrement</button>
