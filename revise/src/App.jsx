@@ -71,7 +71,7 @@ function App() {
       />
 
 
-{/* <ClickCount/>
+      {/* <ClickCount/>
 <hr/>
 <br/>
 <HoverCount/> */}
