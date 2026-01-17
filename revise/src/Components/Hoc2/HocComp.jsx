@@ -29,7 +29,7 @@ function HocComp(MiddleComp) {
                         decrementCount={this.decrementCount}
                         resetCount={this.resetCount}
                         count={this.state.count}
-                        {...this.props}   
+                        {...this.props}
                     />
                 </div>
             );
